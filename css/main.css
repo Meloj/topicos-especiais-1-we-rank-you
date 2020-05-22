@@ -6,8 +6,9 @@
 .clear, .pricetable-clear, .block-clear_block{
 	clear:both;
 }
-html{
+html {
 background: url("http://skywarriorthemes.com/oblivion/wp-content/themes/oblivion/colorstyles/img/soldierf.jpg") no-repeat center bottom #1d2031;
+scroll-behavior: smooth;
 }
 body {
     background-attachment: fixed !important;
