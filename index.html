@@ -26,6 +26,7 @@
 		<link rel="stylesheet" id="custom-style-css"  href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic" type="text/css" media="all" />
 	</head>
 	<body class="home page page-id-26 page-template page-template-tmp-no-title-php">
+		<!--Adição do Script do JavaScript SDK para execução do plugin do Facebook-->
 		<script>
 			window.fbAsyncInit = function() {
 			  FB.init({
@@ -95,14 +96,7 @@
 										<li><a href="elements.html">Elements</a></li>
 									</ul>
 								</li>
-								<li class="dropdown">
-									<a href="clan-members.html">The team</a>
-									<ul class="sub-menu dropdown-menu">
-										<li><a href="members.html">About the team</a></li>
-										<li><a href="game.html">About the game</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
+							<!--	<li class="dropdown">
 									<a href="portfolio.html">Portfolio</a>
 									<ul class="sub-menu dropdown-menu">
 										<li><a href="single-left-sidebar.html">Single left sidebar</a></li>
@@ -110,12 +104,9 @@
 										<li><a href="portfolio-single-ext.html">Portfolio single ext.</a></li>
 										<li><a href="portfolio-single-gallery.html">Portfolio single gallery</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li><a href="gallery.html">Gallery</a></li>
-								<li><a href="forums.html">Forums</a></li>
-								<li><a href="shop.html">Shop</a></li>
 								<li class="dropdown">
-									<a href="#">Blog</a>
 									<ul class="sub-menu dropdown-menu">
 										<li ><a href="blog-isotope.html">Blog Isotope</a></li>
 										<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
@@ -123,7 +114,14 @@
 										<li><a href="blog-full-width.html">Blog Full Width</a></li>
 									</ul>
 								</li>
-								<li><a href="#contato">Contact</a></li>
+								<li><a href="#contato">Contato</a></li>
+								<li class="dropdown">
+									<a href="clan-members.html" id="team">The team</a>
+									<ul class="sub-menu dropdown-menu">
+										<li><a href="members.html">About the team</a></li>
+										<li><a href="game.html">About the game</a></li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 						<a href="#myModalL" role="button" data-toggle="modal" class="account"><img src="./img/account.png"></a>
@@ -193,7 +191,7 @@
 
 						<div class="block block-column_block span8 first cf">
 							<!-- Latest news -->
-							<div class="block span8 first cf">
+							<!-- <div class="block span8 first cf">
 								<div class="title-wrapper">
 									<h3 class="widget-title">Trending Lives</h3>
 									<div class="clear"></div>
@@ -264,6 +262,27 @@
 												<i class="icon-calendar"></i> May 4, 2013 - <i class="icon-comment"></i> 5 Comments
 											</p>
 										</li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+							</div> -->
+
+							<div class="block span8 first cf">
+								<div class="title-wrapper">
+									<h3 class="widget-title">Trending Live</h3>
+									<div class="clear"></div>
+								</div>
+								<div class="wcontainer">
+									<ul class="newsbh">
+										<iframe
+											src="https://player.twitch.tv/?channel=gaules&parent=www.example.com"
+											height="400px"
+											width="300"
+											frameborder="<frameborder>"
+											scrolling="no"
+											allowfullscreen="true"
+											autoplay="true"> 
+										</iframe>
 									</ul>
 									<div class="clear"></div>
 								</div>
@@ -994,7 +1013,7 @@
 							<div class="block span4 first sidebar">
 								<div class="widget">
 									 <div class="title-wrapper">
-										<h3 class="widget-title">Find us on facebook!</h3>
+										<h3 class="widget-title">Nossa Página no Facebook</h3>
 										<div class="clear"></div>
 
 									<!-- </div>
@@ -1005,7 +1024,11 @@
 									</div> -->
 
 									<!--A linha a seguir acrescenta o pluguin do facebook-->
-									<div class="fb-page" data-href="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal" data-tabs="timeline" data-width="345" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal">We Rank You</a></blockquote></div>
+									<div class="fb-page" data-href="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal" data-tabs="" data-width="345" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+										<blockquote cite="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal" class="fb-xfbml-parse-ignore">
+											<a href="https://www.facebook.com/We-Rank-You-102908264771835/?ref=page_internal">We Rank You</a>
+										</blockquote>
+									</div>
 								</div>
 								<div class="widget">
 									<div class="title-wrapper">
@@ -1257,7 +1280,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="contato" class="copyright span12">
+			<div class="copyright span12">
 				<div class="social">
 					<a data-original-title="Rss" data-toggle="tooltip" class="rss" target="_blank" href="#"><i class="fa fa-rss"></i></a>
 					<a data-original-title="Dribbble" data-toggle="tooltip" class="dribbble" target="_blank" href="#"><i class="fa fa-dribbble"></i> </a>
@@ -1271,6 +1294,133 @@
 				</div>
 			</div>
 		</footer>
+
+		<footer class="container">
+			<div class="span12">
+					<div class="first footer_widget span3">
+					<h3>Follow us on twitter!</h3>
+						<div class="latest-twitter-tweet"><i class="icon-twitter"></i> "@wdchomestager If you re-download the file from your Downloads area, it will be the most updated version :) Thanks! ^TK"</div>
+						<div class="latest-twitter-tweet"><i class="icon-twitter"></i> "@alextintea Looking good! Congrats :D ^TK"</div>
+						<div class="latest-twitter-tweet"><i class="icon-twitter"></i> "@NickCairl Thanks Nick! Glad you enjoy the site :D ^TK"</div>
+						<div class="latest-twitter-tweet"><i class="icon-twitter"></i> "Hi everyone, site is up again! :) ^CA"</div>
+						<div class="latest-twitter-tweet"><i class="icon-twitter"></i> "Awesome looking forward to new themes! Skywarriors are very cool!"</div>
+						<div id="latest-twitter-follow-link"><a href="http://twitter.com/envato">follow @envato on twitter</a></div>
+					</div>
+
+				<div class="footer_widget span3">
+					<h3> Latest posts</h3>
+					<ul class="review">
+						<li>
+							<div class="img">
+								<a rel="bookmark" href="#">
+									<img src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/65-57x57.jpg">
+									<span class="overlay-link"></span>
+								</a>
+							</div>
+							<div class="info">
+								<a href="#">Eget ultrices mauris rhoncus non</a><br>
+								<small><i class="icon-calendar"></i> May 4, 2013 - <i class="icon-comment"></i> 5 Comments</small><br>
+								<div class="overall-score">
+									<div class="rating r-4"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<div class="img">
+								<a rel="bookmark" href="#">
+									<img src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/08/2-57x57.jpg">
+									<span class="overlay-link"></span>
+								</a>
+							</div>
+							<div class="info">
+								<a href="#">Etiam massa mauris fermentum a congue id</a><br>
+								<small><i class="icon-calendar"></i> June 17, 2013 - <i class="icon-comment"></i> 3 Comments</small><br>
+								<div class="overall-score">
+									<div class="rating r-45"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<div class="img">
+								<a rel="bookmark" href="#">
+									<img src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/05/8-57x57.jpg">
+									<span class="overlay-link"></span>
+								</a>
+							</div>
+							<div class="info">
+								<a href="#">Mauris risus augue fermentum sit amet congue sit amet</a><br>
+								<small><i class="icon-calendar"></i> January 4, 2013 - <i class="icon-comment"></i> 2 Comments</small><br>
+								<div class="overall-score">
+									<div class="rating r-45"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<div class="img">
+								<a rel="bookmark" href="#">
+									<img src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/57-57x57.jpg">
+									<span class="overlay-link"></span>
+								</a>
+							</div>
+							<div class="info">
+								<a href="#">Duis lacinia nisi vel lorem scelerisque interdum</a><br>
+								<small><i class="icon-calendar"></i> May 4, 2013 - <i class="icon-comment"></i> 2 Comments</small><br>
+								<div class="overall-score">
+									<div class="rating r-4"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_widget span3">
+					<h3>From the forum</h3>
+					<ul>
+						<li><a class="bbp-forum-title" href="#"><i class="icon-comment"></i>Pellentesque aliquam nibh eget nisi hendreri</a></li>
+						<li><a class="bbp-forum-title" href="#"><i class="icon-comment"></i>Curabitur sollicitudin mi vel auctor auctor</a></li>
+						<li><a class="bbp-forum-title" href="#"><i class="icon-comment"></i>Integer vitae neque ipsum</a></li>
+						<li><a class="bbp-forum-title" href="#"><i class="icon-comment"></i>Pellentesque placerat tincidunt magna quis condimentum</a></li>
+						<li><a class="bbp-forum-title" href="#"><i class="icon-comment"></i>Closed topic</a></li>
+					</ul>
+				</div>
+				<div class="widget-4 last footer_widget span3">
+					<h3>latest works</h3>
+					<div class="wcontent wprojects">
+						<a href="#" data-toggle="tooltip" data-original-title="The swamp lord">
+							<img src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/76-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="7">
+						</a>
+						<a href="#" data-toggle="tooltip" data-original-title="Call of the dragon">
+							<img width="305" height="305" src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/62-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="6">
+						</a>
+						<a href="#" data-toggle="tooltip" data-original-title="Evil intentions">
+							<img width="305" height="305" src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/56-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="5">
+							</a>
+						<a href="#" data-toggle="tooltip" data-original-title="Under the water">
+							<img width="305" height="305" src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/46-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="4">
+						</a>
+						<a href="#" data-toggle="tooltip" data-original-title="The boss">
+							<img width="305" height="305" src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/34-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="3">
+						</a>
+						<a href="#" data-toggle="tooltip" data-original-title="The god">
+							<img width="305" height="305" src="http://skywarriorthemes.com/gameaddict/wp-content/uploads/2013/06/25-305x305.jpg" class="attachment-post-thumbnail wp-post-image" alt="2">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="contato" class="copyright span12">
+				<div class="social">
+					<h1 style="text-align: left;">Fale Conosco:</h1>
+					<a data-original-title="Youtube" data-toggle="tooltip" class="youtube" target="_blank" href=""><i class="fa fa-youtube"></i> </a>
+					<a data-original-title="Twitch" data-toggle="tooltip" class="twitch" target="_blank" href=""><i class="fa fa-gamepad"></i></a>
+					<a data-original-title="Google plus" data-toggle="tooltip" class="google-plus" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+					<a data-original-title="Facebook" data-toggle="tooltip" class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+				</div>
+			</div>
+		</footer>
+		
 		<!-- JavaScript -->
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.cookie.pack.js"></script>
