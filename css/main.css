@@ -4508,3 +4508,11 @@ body .normal-page, body .portfolio, body .blog{
 .style_switcher .bck li:first-child a{
 	opacity: 1 !important;
 }
+
+.container .fototeam {
+	position: relative;
+	max-width:193px;
+	max-height:193px;
+	width: auto;
+	height: auto;
+}
