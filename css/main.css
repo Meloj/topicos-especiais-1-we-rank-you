@@ -7,7 +7,7 @@
 	clear:both;
 }
 html {
-background: url("http://skywarriorthemes.com/oblivion/wp-content/themes/oblivion/colorstyles/img/soldierf.jpg") no-repeat center bottom #1d2031;
+background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/798fc33f-5338-426c-95ef-0dce36f68da0/d758mbq-3e6c2f7d-9887-4049-b362-a37dc3f28c70.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzk4ZmMzM2YtNTMzOC00MjZjLTk1ZWYtMGRjZTM2ZjY4ZGEwXC9kNzU4bWJxLTNlNmMyZjdkLTk4ODctNDA0OS1iMzYyLWEzN2RjM2YyOGM3MC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.YOCasBxtRKUKN1EPXiZ8Z8GrEZciFuYJkUgSKlV99QI") no-repeat center bottom #1d2031;
 scroll-behavior: smooth;
 }
 body {
@@ -4503,6 +4503,7 @@ border-color:#40434e;
 
 body .normal-page, body .portfolio, body .blog{
 	background: #f1f1f1;
+	
 }
 
 .style_switcher .bck li:first-child a{
@@ -4516,3 +4517,58 @@ body .normal-page, body .portfolio, body .blog{
 	width: auto;
 	height: auto;
 }
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	height: 200px;
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #8d0000ff; }

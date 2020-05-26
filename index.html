@@ -1,7 +1,16 @@
-
 <!doctype html>
-<html lang="en-US">
+<html lang="pt-BR">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167603136-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-167603136-1');
+		</script>
+
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<title>We Rank You | </title>
@@ -13,14 +22,14 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="css/layerslider.css">
-		          <!-- picker styles -->
-    <link rel="stylesheet" href="colorstyles/picker.css" type="text/css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background1" href="colorstyles/background1.css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background2" href="colorstyles/background2.css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background3" href="colorstyles/background3.css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background4" href="colorstyles/background4.css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background5" href="colorstyles/background5.css" />
-    <link rel="alternate stylesheet" type="text/css" media="screen" title="background6" href="colorstyles/background6.css" />
+		<!-- picker styles -->
+		<link rel="stylesheet" href="colorstyles/picker.css" type="text/css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background1" href="colorstyles/background1.css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background2" href="colorstyles/background2.css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background3" href="colorstyles/background3.css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background4" href="colorstyles/background4.css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background5" href="colorstyles/background5.css" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" title="background6" href="colorstyles/background6.css" />
 
 
 		<link rel="stylesheet" id="custom-style-css"  href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic" type="text/css" media="all" />
@@ -81,19 +90,19 @@
 								<li class="dropdown current-menu-parent">
 									<a href="index.html" data-toggle="dropdown" class="dropdown-toggle">Home</a>
 									<ul class="sub-menu dropdown-menu">
-										<li><a href="index-portfolio.html">Portfolio version</a></li>
+										<li><a href="erro.html">Portfolio version</a></li>
 										<li><a href="index.html">Magazine version</a></li>
-										<li><a href="index-blog.html">Blog roll version</a></li>
+										<li><a href="erro.html">Blog roll version</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="#">Features</a>
+									<a href="erro.html">Features</a>
 									<ul class="sub-menu dropdown-menu">
-										<li><a href="accordion-and-tabs.html">Accordion and tabs</a></li>
-										<li><a href="404.html">404</a></li>
-										<li><a href="columns.html">Columns</a></li>
-										<li><a href="pricing-tables.html">Pricing tables</a></li>
-										<li><a href="elements.html">Elements</a></li>
+										<li><a href="erro.html">Accordion and tabs</a></li>
+										<li><a href="erro.html">404</a></li>
+										<li><a href="erro.html">Columns</a></li>
+										<li><a href="erro.html">Pricing tables</a></li>
+										<li><a href="erro.html">Elements</a></li>
 									</ul>
 								</li>
 							<!--	<li class="dropdown">
@@ -105,13 +114,13 @@
 										<li><a href="portfolio-single-gallery.html">Portfolio single gallery</a></li>
 									</ul>
 								</li> -->
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="erro.html">Gallery</a></li>
 								<li class="dropdown">
 									<ul class="sub-menu dropdown-menu">
-										<li ><a href="blog-isotope.html">Blog Isotope</a></li>
-										<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-										<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-										<li><a href="blog-full-width.html">Blog Full Width</a></li>
+										<li ><a href="erro.html">Blog Isotope</a></li>
+										<li><a href="erro.html">Blog Right Sidebar</a></li>
+										<li><a href="erro.html">Blog Left Sidebar</a></li>
+										<li><a href="erro.html">Blog Full Width</a></li>
 									</ul>
 								</li>
 								<li><a href="#contato">Contato</a></li>
@@ -124,8 +133,48 @@
 								</li>
 							</ul>
 						</div>
-						<a href="#myModalL" role="button" data-toggle="modal" class="account"><img src="./images/account.png"></a>
-						<form method="get" id="header-searchform" action="http://skywarriorthemes.com/gameaddict/">
+						<!--Modal adicionado ao template para cadastro de usuários-->
+						<a href="#openModal" role="button" class="account"><img src="./images/account.png">Cadastre-se Aqui ou Faça Login</a>
+						<div id="openModal" class="modalDialog">
+							<div>
+								<a href="#close" title="Close" class="close">X</a>
+								<h1> </h1>
+								<form name="LoginWithAjax_Form" id="LoginWithAjax_Form" action="http://skywarriorthemes.com/gameaddict/wp-login.php?callback=?&amp;template=" method="post">
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr id="LoginWithAjax_Username">
+												<td class="username_input">
+													<input name="log" placeholder="Usuário ou email" id="lwa_user_login" class="input" value="" type="text">
+												</td>
+											</tr>
+											<tr id="LoginWithAjax_Password">
+												<td class="password_input">
+													<input placeholder="Senha" name="pwd" id="lwa_user_pass" class="input" value="" type="password">
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+											<tr id="LoginWithAjax_Submit">
+												<td id="LoginWithAjax_SubmitButton">
+													<input name="rememberme" id="lwa_rememberme" value="forever" type="checkbox"> <label>Lembrar Login</label>
+													<a href="#" title="Password Lost and Found">Esqueceu sua senha?</a>
+													<br><br>
+													<input class="button-small"value="Log In" type="submit">
+													<!-- <a class="reg-btn button-small" href="#">Cadastrar-se</a> -->
+													<a onclick="open('cadastro.html','cadastro.html','status=no,Width=500,Height=500');" role="button" class="reg-btn button-small" id="cadastro">Cadastrar-se</a>	
+													<input name="redirect_to" value="#" type="hidden">
+													<input name="testcookie" value="1" type="hidden">
+													<input name="lwa_profile_link" value="" type="hidden">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+						</div>
+
+						<form method="get" id="header-searchform" action="erro.html">
 							<input autocomplete="off" value="" name="s" id="header-s" type="text">
 							<input id="header-searchsubmit" value="Search" type="submit">
 
@@ -135,7 +184,7 @@
 				</div>
 				<!-- /.navbar-inner -->
 			</div>
-		<div id="myModalL" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<!-- <div id="myModalL" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 				<h3>Login</h3>
@@ -176,7 +225,8 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> -->
+
 		<div class="page normal-page container">
 
 			<div class="row">
@@ -1318,7 +1368,7 @@
 					<h3>FIFA</h3>
 					<div class="newsb-thumbnail">
 							<a href="#" rel="bookmark">	
-								<img src="https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2020-285x380.jpg">
+								<img src="https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2020-285x390.jpg">
 								<span class="overlay-link"></span>
 							</a>
 					</div>	
@@ -1328,7 +1378,7 @@
 					<h3>League of Legends</h3>
 					<div class="newsb-thumbnail">
 						<a href="#" rel="bookmark">	
-							<img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg">
+							<img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x390.jpg">
 							<span class="overlay-link"></span>
 						</a>	
 					</div>
@@ -1338,7 +1388,7 @@
 					<h3>Counter-Strike</h3>
 					<div class="newsb-thumbnail">
 						<a href="#" rel="bookmark">	
-							<img src="https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-285x380.jpg">
+							<img src="https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-285x390.jpg">
 							<span class="overlay-link"></span>
 						</a>
 					</div>	
@@ -1347,7 +1397,7 @@
 					<h3>Free Fire</h3>
 					<div class="newsb-thumbnail">
 						<a href="#" rel="bookmark">	
-							<img src="https://static-cdn.jtvnw.net/ttv-boxart/Garena%20Free%20Fire-285x380.jpg">
+							<img src="https://static-cdn.jtvnw.net/ttv-boxart/Garena%20Free%20Fire-285x390.jpg">
 							<span class="overlay-link"></span>
 						</a>	
 					</div>	
@@ -1394,10 +1444,10 @@
 			<div id="contato" class="copyright span12">
 				<div class="social">
 					<h3 class="widget-title">Fale Conosco:</h3>
-					<a data-original-title="Youtube" data-toggle="tooltip" class="youtube" target="_blank" href=""><i class="fa fa-youtube"></i> </a>
-					<a data-original-title="Twitch" data-toggle="tooltip" class="twitch" target="_blank" href=""><i class="fa fa-gamepad"></i></a>
-					<a data-original-title="Google plus" data-toggle="tooltip" class="google-plus" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
-					<a data-original-title="Facebook" data-toggle="tooltip" class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+					<a data-original-title="Youtube" data-toggle="tooltip" class="youtube" target="_blank" href="erro.html"><i class="fa fa-youtube"></i> </a>
+					<a data-original-title="Twitch" data-toggle="tooltip" class="twitch" target="_blank" href="erro.html"><i class="fa fa-gamepad"></i></a>
+					<a data-original-title="Google plus" data-toggle="tooltip" class="google-plus" target="_blank" href="erro.html"><i class="fa fa-google-plus"></i></a>
+					<a data-original-title="Facebook" data-toggle="tooltip" class="facebook" target="_blank" href="erro.html"><i class="fa fa-facebook"></i></a>
 				</div>
 			</div>
 		</footer>
